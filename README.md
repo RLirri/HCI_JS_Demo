@@ -17,7 +17,7 @@ This repository contains a demo for the HCI Web Development lab session focused 
 ## Resources:
 
 - [Trello Board Link](https://trello.com/b/tpmo9av1/hcilabwebdevelopment)
-- [Week7 JS Introduction Slide](hhttps://docs.google.com/presentation/d/1MEckhEWg_8T2uEhgwSJeW2siZPKWPAEsIJoKd-OBWPQ/edit?usp=sharing)
+- [Week7 JS Introduction Slid](https://docs.google.com/presentation/d/1MEckhEWg_8T2uEhgwSJeW2siZPKWPAEsIJoKd-OBWPQ/edit?usp=sharing)
 - [Week7 JS Chrome Dev Tools](https://docs.google.com/presentation/d/1_L2M3cop3RaPeNo9KH08Y2AL5Rr0dLm6zdy8ZT5GUo0/edit?usp=sharing)
 - [W3Schools JS Tutorial](https://www.w3schools.com/js/default.asp)
 - [MDN Web Docs - JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
