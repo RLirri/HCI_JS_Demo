@@ -322,8 +322,13 @@ const animals = [
 // Question - Write the code:
 // First loop: Iterate through the list of animals starting from the first element
 // Log the index and corresponding animal name
-
+for (let i = 0; i < animals.length; i++) {
+  console.log(i, animals[i]);
+}
 // Question: What is the meaning of the following code?
 // for (let i = animals.length - 1; i >= 0; i--) {
 //     console.log(animals[i])
 // }
+
+//  Answer: A loop that iterates through the animals array in reverse order,
+// starting from the last element and ending at the first element.

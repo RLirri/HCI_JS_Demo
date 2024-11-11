@@ -23,6 +23,7 @@ const square = (num) => {
 // }
 
 // Question 1: Use Arrow function to roll a die with implicit return
+const rollDie = () => Math.floor(Math.random() * 6) + 1;
 
 const movies = [
   {
@@ -49,3 +50,4 @@ const movies = [
 // })
 
 // Question 2:  IMPLICIT RETURN return to map the movies
+const newMovies = movies.map((movie) => `${movie.title} - ${movie.score / 10}`);

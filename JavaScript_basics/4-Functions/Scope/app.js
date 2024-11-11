@@ -75,3 +75,8 @@ bankRobbery();
 
 // Question: What is the Expected Output?
 // Expected Output:
+
+// PLEASE HELP US, SPIDERMAN
+// PLEASE HELP US, WOLVERINE
+// PLEASE HELP US, BLACK PANTHER
+// PLEASE HELP US, BATWOMAN

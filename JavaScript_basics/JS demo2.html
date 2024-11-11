@@ -30,8 +30,21 @@
       // For all other times, greet "Good Evening"
 
       // Display the greeting in an alert box
+      let today = new Date();
+      let hourOfDay = today.getHours();
+      console.log(hourOfDay);
+
+      if (hourOfDay > 4 && hourOfDay < 12) {
+        greeting = "Good Morning";
+      } else if (hourOfDay >= 12 && hourOfDay < 18) {
+        greeting = "Good Afternoon";
+      } else {
+        greeting = "Good Evening";
+      }
+      alert(greeting);
     </script>
 
     <!-- External JavaScript: include external condition.js file -->
+    <script type="text/javascript" src="conditionals.js"></script>
   </body>
 </html>

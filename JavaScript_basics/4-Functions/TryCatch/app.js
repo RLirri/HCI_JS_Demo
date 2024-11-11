@@ -29,3 +29,6 @@ let msg2 = "Hello World"; // This is a valid string
 yell(msg2);
 
 // Question: What is the sample Output?
+
+// Please pass a string next time!
+// HELLO WORLDHELLO WORLDHELLO WORLD

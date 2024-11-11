@@ -21,3 +21,6 @@ const person = {
 
 // Question, if we use the.shortName() , what is the output?
 person.shoutName();
+
+// After 3 seconds, the setTimeout callback function executes.
+// { firstName: 'Viggo', lastName: 'Mortensen', fullName: [Function: fullName], shoutName: [Function: shoutName] } Viggo Mortensen

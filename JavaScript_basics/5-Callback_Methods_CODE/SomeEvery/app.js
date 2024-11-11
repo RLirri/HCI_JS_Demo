@@ -74,3 +74,4 @@ let movieValid = movies.some((movie) => movie.year > 2015);
 console.log(movieValid);
 
 // Question: What is the output?
+// true true

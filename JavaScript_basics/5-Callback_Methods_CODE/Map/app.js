@@ -37,6 +37,9 @@ const movies = [
 
 // Question 1: Using map to create a new array of movie titles in uppercase
 // Convert the title to uppercase
+const titles = movies.map(function (movie) {
+  return movie.title.toUpperCase();
+});
 
 //  Question 2: Output the array of movie titles
 // Output: ['AMADEUS', 'STAND BY ME', 'PARASITE', 'ALIEN']

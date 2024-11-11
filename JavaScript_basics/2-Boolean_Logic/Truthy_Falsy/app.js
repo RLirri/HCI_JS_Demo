@@ -4,6 +4,14 @@
 // If the input has a truthy value (not empty, not null, not undefined, etc.), log "TRUTHY!"
 // If the input is falsy (empty string, null, undefined, 0, etc.), log "FALSY!"
 
+const userInput = prompt("Enter something");
+
+if (userInput) {
+  console.log("TRUTHY!");
+} else {
+  console.log("FALSY!");
+}
+
 // if (0) {
 //     console.log("TRUTHY")
 // } else {

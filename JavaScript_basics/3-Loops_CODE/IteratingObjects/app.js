@@ -34,3 +34,10 @@ for (let person in testScores) {
 // Iterate over each score in the scores array
 // Add each score to the total
 // Calculate the average by dividing the total by the number of scores
+
+let total = 0;
+let scores = Object.values(testScores);
+for (let score of scores) {
+  total += score;
+}
+console.log(total / scores.length);

@@ -76,5 +76,6 @@ console.log(recentMovies);
 // const goodTitles = goodMovies.map(m => m.title)
 
 // Question 1: Chaining filter and map methods to get titles of good movies(score > 80)
-
+movies.filter((m) => m.score > 80).map((m) => m.title);
 // Question 2: What is the output
+// ["Amadeus", "Stand By Me", "Parasite", "Alien"]

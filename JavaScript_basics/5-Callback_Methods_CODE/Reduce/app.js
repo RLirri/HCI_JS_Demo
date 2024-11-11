@@ -83,6 +83,9 @@ const movies = [
 // Question 1: Using reduce to find the highest rated movie
 // Update bestMovie if the current movie has a higher score
 // Otherwise, keep the current best movie
+const bestMovie = movies.reduce((highest, movie) => {
+  return movie.score > highest.score ? movie : highest;
+});
 
 //Question 2: Output the highest rated movie
 // Output: { title: 'Amadeus', score: 99, year: 1984 }
