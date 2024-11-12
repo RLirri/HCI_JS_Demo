@@ -1,0 +1,15 @@
+.some-class {
+	color: blue;
+	border: 10px solid red;
+}
+
+.another-class {
+	color: purple;
+	fontSize: 76px;
+}
+
+.third-class {
+	color: green;
+    font: italic bold 15px Georgia, serif;
+}
+
