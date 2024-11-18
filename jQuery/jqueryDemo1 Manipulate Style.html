@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Demo - Manipulating Style</title>
+    <!-- Linking the jQuery library locally -->
+    <script type="text/javascript" src="jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <h1>jQuery Demo!</h1>
+
+    <!-- New example list -->
+    <ul>
+      <li id="highlight">Sunflower</li>
+      <li class="featured">Rose <a href="flowers.com">Learn More</a></li>
+      <li id="unique">Tulip</li>
+      <li id="novel">The Great Gatsby</li>
+      <li id="novel">Moby Dick</li>
+    </ul>
+
+    <!-- Example links -->
+
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <br /><br />
+    <a href="https://www.yahoo.com" target="_blank">Yahoo</a>
+    <script>
+      // Apply a red border to the element with id "unique"
+      $("#unique").css("border", "2px solid red");
+
+      // Define a set of CSS styles
+      var styles = {
+        backgroundColor: "lightblue",
+        fontWeight: "bold",
+      };
+
+      // Apply the defined styles to the element with id "highlight"
+      $("#highlight").css(styles);
+
+      // Change the text color of all <li> elements to green
+      $("li").css("color", "green");
+
+      // Add a dashed orange border to all elements with the class "featured"
+      $(".featured").css("border", "1px dashed orange");
+
+      // Change the color of all <a> elements that are links
+      $("a:link").css("color", "purple");
+
+      // Apply a gray background to all elements with the id "novel"
+      // Note: This selects all elements with the same id, though it's best practice to use unique ids
+      $("[id=novel]").css("backgroundColor", "grey");
+    </script>
+  </body>
+</html>

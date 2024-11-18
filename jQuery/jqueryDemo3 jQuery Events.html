@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Demo - jQuery Events</title>
+    <!-- Link to jQuery library locally -->
+    <script type="text/javascript" src="jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <h1>jQuery Demo - jQuery Events: click(), keypress()</h1>
+    <h2>
+      The on() method attaches one or more event handlers for the selected
+      elements.
+    </h2>
+
+    <div>
+      <!-- Input fields for first name and last name -->
+      First name:<br />
+      <input type="text" name="firstname" value="" />
+      <br />
+      Last name:<br />
+      <input type="text" name="lastname" value="" />
+      <br /><br />
+
+      <!-- Submit and Clear buttons -->
+      <button id="submit">Submit Now</button>
+      <button>Clear</button>
+    </div>
+
+    <script>
+      // Example of click() event:
+      // This binds a click event to the button with id "submit"
+      // When clicked, it logs a message to the console and displays an alert
+      $("#submit").click(function () {
+        console.log("Another click");
+        alert("Someone clicked a button");
+      });
+
+      // Example of using the on() method:
+      // This binds a click event to all <button> elements
+      // When any button is clicked, it triggers an alert
+      $("button").on("click", function () {
+        alert("Someone clicked a button");
+      });
+
+      // Example of keypress() event:
+      // This triggers an alert whenever a key is pressed in any text input field
+      $('input[type="text"]').keypress(function () {
+        alert("text input keypress!");
+      });
+
+      // Placeholder for mouseenter event:
+      // Example: This could trigger an alert or change styles when the mouse enters a specific element
+      // $('selector').mouseenter(function() {
+      //     alert("Mouse entered the element!");
+      // });
+
+      // Placeholder for mouseleave event:
+      // Example: This could trigger an alert or change styles when the mouse leaves a specific element
+      // $('selector').mouseleave(function() {
+      //     alert("Mouse left the element!");
+      // });
+    </script>
+  </body>
+</html>

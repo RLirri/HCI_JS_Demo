@@ -27,6 +27,10 @@ This repository contains a demo for the HCI Web Development lab session focused 
 
 - [Week8 DOM Slide](https://docs.google.com/presentation/d/18n1rayP_9jBu4jvv2Ch2U4II31CcLGJhRBwdpRbs-fo/edit?usp=sharing)
 
+## Week 9 Resources:
+
+- [Week9 jQuery Slide](https://docs.google.com/presentation/d/1_eRKS1Ca__is8j1nfySi6FOl2tXg61LFyNhUukE8g_c/edit?usp=sharing)
+
 ## Questions:
 
 - If you have any questions during the coding session, ask me anytime.

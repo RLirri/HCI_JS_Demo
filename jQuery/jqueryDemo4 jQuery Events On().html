@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Demo - jQuery on() method</title>
+    <!-- Link to jQuery library locally -->
+    <script type="text/javascript" src="jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <h1>jQuery on() method works similarly to DOM addEventListener</h1>
+    <h2>
+      The on() method attaches one or more event handlers for the selected
+      elements.
+    </h2>
+
+    <div>
+      <!-- Input fields for user details -->
+      First name:<br />
+      <input type="text" name="firstname" value="" />
+      <br />
+      Last name:<br />
+      <input type="text" name="lastname" value="" />
+      <br /><br />
+
+      <!-- Buttons for different interactions -->
+      <button id="submit">Submit Now</button>
+      <button>Clear</button>
+      <button id="double">Double Click this button</button>
+
+      <br /><br />
+
+      <!-- Link to demonstrate dragstart event -->
+      <a href="" target="_blank">Drag Me!</a>
+
+      <!-- Paragraph for demonstrating multiple events -->
+      <p>on() mouseenter, mouseleave, click for paragraph - click this text!</p>
+    </div>
+
+    <script>
+      // Attach a click event to the button with id "submit"
+      $("#submit").on("click", function () {
+        console.log("Another click"); // Log message to console
+        alert("Someone clicked a button"); // Show an alert when button is clicked
+      });
+
+      /*
+      // Attach click event to all buttons (commented-out example)
+      $('button').on('click', function(){
+          alert("Someone clicked a button");
+      });
+      */
+
+      // Attach a double-click event to the button with id "double"
+      $("#double").on("dblclick", function () {
+        alert("DOUBLE CLICKED!"); // Show an alert on double-click
+      });
+
+      // Attach a dragstart event to the anchor tag
+      $("a").on("dragstart", function () {
+        console.log("DRAG STARTED!"); // Log message when dragging starts
+      });
+
+      // Attach a keypress event to all text input fields
+      $('input[type="text"]').on("keypress", function () {
+        alert("key press in an input!"); // Show an alert when a key is pressed in any text input
+      });
+
+      // Attach multiple events (mouseenter, mouseleave, click) to the paragraph
+      $("p").on({
+        // Change background color to light gray when mouse enters
+        mouseenter: function () {
+          $(this).css("background-color", "lightgray");
+        },
+        // Change background color to light blue when mouse leaves
+        mouseleave: function () {
+          $(this).css("background-color", "lightblue");
+        },
+        // Change background color to yellow when the paragraph is clicked
+        click: function () {
+          $(this).css("background-color", "yellow");
+        },
+      });
+    </script>
+  </body>
+</html>

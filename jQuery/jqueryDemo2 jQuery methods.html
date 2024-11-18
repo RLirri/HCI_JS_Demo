@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Demo - Common jQuery Methods</title>
+    <!-- Link to the jQuery library hosted on a CDN -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.7.1.js"
+    ></script>
+    <!-- Uncomment the line below to use a locally stored jQuery library -->
+    <!-- <script type="text/javascript" src="jquery-3.7.1.js"></script> -->
+
+    <style>
+      /* Define a class for larger font size and red color */
+      .intro {
+        font-size: 150%;
+        color: red;
+      }
+
+      /* Define a class for slightly larger font size and green color */
+      .main {
+        font-size: 120%;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Demo for the jQuery val() method -->
+      <h3>1) Demo of jQuery val() method</h3>
+      <label>Name: </label><input type="text" name="user" />
+      <button>Set the value of the input field</button>
+
+      <!-- Demo for the jQuery text() method -->
+      <h3>2) Demo of jQuery text() method</h3>
+      <button id="btn2">Set text content for all p elements</button>
+      <p>This is a paragraph.</p>
+      <p>This is another paragraph.</p>
+
+      <!-- Demo for the jQuery attr() method -->
+      <h3>3) Demo of jQuery attr() method</h3>
+      <img
+      src="https://images.unsplash.com/photo-1578589318274-02854f68813e?q=80&w=2960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+      alt="Ice" width="284" height="213" /><br />
+      <button id="btn3">Set the width attribute of the image</button>
+
+      <!-- Demo for the jQuery html() method -->
+      <h3>4) Demo of jQuery html() method</h3>
+      <button id="btn4">Change content of all li elements</button>
+      <ul>
+        <li>This is a paragraph.</li>
+        <li>This is another paragraph.</li>
+      </ul>
+
+      <!-- Demo for the jQuery addClass() method -->
+      <h3>5) Demo of jQuery addClass() method</h3>
+      <h1>This is a heading</h1>
+      <h1>This is another heading</h1>
+      <button id="btn5">
+        Add a class name "intro" to the first h1 element
+      </button>
+
+      <!-- Demo for the jQuery removeClass() method -->
+      <h3>6) Demo of jQuery removeClass() method</h3>
+      <button id="btn6">
+        Remove the "intro" class from the first h1 element
+      </button>
+
+      <!-- Demo for the jQuery toggleClass() method -->
+      <h3>7) Demo of jQuery toggleClass() method</h3>
+      <button id="btn7">Toggle class "main" for p elements</button>
+      <p>This is a paragraph.</p>
+      <p>This is another paragraph.</p>
+      <p>
+        <b>Note:</b> Click the button more than once to see the toggle effect.
+      </p>
+    </div>
+
+    <script>
+      // val() method: Sets the value of the input field
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("input:text").val("Ruixin Lab");
+        });
+      });
+
+      // text() method: Sets text content for all <p> elements
+      $(document).ready(function () {
+        $("#btn2").click(function () {
+          $("p").text("Hello world!");
+        });
+      });
+
+      // attr() method: Changes the width attribute of an image
+      $(document).ready(function () {
+        $("#btn3").click(function () {
+          $("img").attr("width", "500");
+        });
+      });
+
+      // html() method: Changes the content of all <li> elements
+      $(document).ready(function () {
+        $("#btn4").click(function () {
+          $("li").html("Hello <b>world!</b>");
+        });
+      });
+
+      // addClass() method: Adds a class name to the first <h1> element
+      $(document).ready(function () {
+        $("#btn5").click(function () {
+          $("h1:first").addClass("intro");
+        });
+      });
+
+      // removeClass() method: Removes the class name "intro" from the first <h1> element
+      $(document).ready(function () {
+        $("#btn6").click(function () {
+          $("h1:first").removeClass("intro");
+        });
+      });
+
+      // toggleClass() method: Toggles the "main" class for all <p> elements
+      $(document).ready(function () {
+        $("#btn7").click(function () {
+          $("p").toggleClass("main");
+        });
+      });
+    </script>
+  </body>
+</html>
